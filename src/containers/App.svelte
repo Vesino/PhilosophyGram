@@ -1,3 +1,12 @@
+
+<script>
+    import Header from '../components/Header.svelte'
+    import Main from '../components/Main.svelte'
+    import Sidebar from '../components/Sidebar.svelte'
+    import Timeline from '../components/Timeline.svelte'
+
+</script>
+
 <style>
     :global(body) {
         background-color: #676778;
@@ -5,6 +14,9 @@
     }
 </style>
 
-<div class="main">
-    <h1>Hello Phylosopher!</h1>
-</div>
+<Header />
+
+<Main>
+    <Timeline />
+    <Sidebar />
+</Main>
